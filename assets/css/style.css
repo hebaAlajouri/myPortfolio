@@ -131,63 +131,63 @@ button,input{
 /* SIDEBAR */
 .sidebar {
     position: fixed;
-    width: 250px; /* Increased width for better readability */
+    width: 250px; 
     height: 100vh;
     background-color: var(--body-color);
-    border-right: 1px solid var(--scroll-bar-color); /* Better visibility */
-    padding: 20px; /* Added padding for aesthetics */
-    transition: width 0.3s ease; /* Smooth transition effect */
+    border-right: 1px solid var(--scroll-bar-color); 
+    padding: 20px; 
+    transition: width 0.3s ease; 
 }
 
 .nav__logo {
     text-align: center;
-    margin-bottom: 20px; /* Spacing below logo */
+    margin-bottom: 20px; 
 }
 
 .nav__menu {
-    margin-top: 20px; /* Spacing above menu */
+    margin-top: 20px;
 }
 
 .menu {
     display: flex;
-    flex-direction: column; /* Changed to column layout */
+    flex-direction: column; 
 }
 
 .nav__item {
-    margin-bottom: 15px; /* Spacing between items */
+    margin-bottom: 15px; 
 }
 
 .nav__link {
-    display: block; /* Ensures the link takes the full width */
-    padding: 10px; /* Added padding for a better clickable area */
+    display: block; 
+    padding: 10px; 
     color: var(--title-color);
     font-weight: var(--font-medium);
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s; 
 }
 
 .nav__link.active-link, .nav__link:hover {
     color: var(--skin-color);
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
-    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
 }
 
 /* Share Button */
 .btn__share {
     position: absolute;
-    bottom: 20px; /* Spacing from the bottom */
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Centered horizontally */
+    transform: translateX(-50%); 
     text-align: center;
 }
 
 .social__share {
     font-size: 1.5rem;
     color: var(--skin-color);
-    transition: color 0.3s; /* Color transition on hover */
+    transition: color 0.3s; 
 }
 
 .social__share:hover {
-    color: hsl(var(--hue-color), 100%, 50%); /* Change color on hover */
+    color: hsl(var(--hue-color), 100%, 50%); 
 }
 
 /* MAIN */
@@ -379,7 +379,7 @@ button, input {
 /* Hide sidebar on mobile screens */
 @media screen and (max-width: 768px) {
     .sidebar {
-        display: none;  /* Hides the sidebar */
+        display: none;  
     }
 }
 
@@ -448,7 +448,7 @@ button, input {
     justify-content: center;
     column-gap: 2rem;
     margin-top: 1.5rem;
-    flex-wrap: wrap;  /* Allow items to wrap for small screens */
+    flex-wrap: wrap; 
 }
 
 .info__item {
@@ -456,7 +456,7 @@ button, input {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 1rem; /* Add space between items */
+    margin-bottom: 1rem;
 }
 
 .info__icon {
@@ -493,74 +493,73 @@ button, input {
 /* Hide social links on small screens (phone) */
 @media screen and (max-width: 768px) {
     .home__social {
-        display: none;  /* Hides the entire social section */
+        display: none;  
     }
 
     .home__container {
-        margin-left: 2rem;  /* Reduce margin for smaller screens */
+        margin-left: 2rem;  
     }
 
     .my__info {
-        flex-direction: column;  /* Stack info items vertically */
-        margin-top: 1rem;  /* Reduce margin at the top */
-        column-gap: 0;  /* Remove horizontal gap */
+        flex-direction: column; 
+        margin-top: 1rem;  
+        column-gap: 0;  
     }
 
     .info__item {
-        margin-bottom: 1rem;  /* Increase space between info items */
+        margin-bottom: 1rem; 
     }
 
     .home__title {
-        font-size: 2rem;  /* Reduce font size for smaller screens */
+        font-size: 2rem; 
     }
 
     .home__subtitle {
-        font-size: 1.2rem;  /* Smaller subtitle text */
+        font-size: 1.2rem; 
     }
 
     .home__description {
-        max-width: 100%;  /* Make description text take full width */
-        font-size: 0.9rem;  /* Adjust font size */
+        max-width: 100%; 
     }
 }
 
 /* Media Queries for Extra Small Screens (Mobile) */
 @media screen and (max-width: 480px) {
     .home__container {
-        margin-left: 1rem;  /* Reduce margin even more */
+        margin-left: 1rem; 
     }
 
     .home__social {
         top: 1rem;
-        column-gap: 1.5rem;  /* Further reduce gap */
+        column-gap: 1.5rem;  
     }
 
     .home__social-follow {
-        font-size: 0.9rem;  /* Even smaller text for "Follow Me" */
+        font-size: 0.9rem;  
     }
 
     .home__social-link {
-        font-size: 1rem;  /* Adjust icon size */
+        font-size: 1rem;  
     }
 
     .my__info {
-        margin-top: 0.5rem;  /* Adjust top margin */
+        margin-top: 0.5rem;  
     }
 
     .info__item {
-        margin-bottom: 0.75rem;  /* Reduce space between items */
+        margin-bottom: 0.75rem;  
     }
 
     .home__title {
-        font-size: 1.5rem;  /* Further reduce title font size */
+        font-size: 1.5rem;  
     }
 
     .home__subtitle {
-        font-size: 1rem;  /* Make subtitle smaller */
+        font-size: 1rem; 
     }
 
     .home__description {
-        font-size: 0.85rem;  /* Make description smaller */
+        font-size: 0.85rem; 
     }
 }
 
@@ -643,12 +642,12 @@ button, input {
 /* MOBILE STYLES */
 @media screen and (max-width: 768px) {
     .button {
-        padding: .6rem 1.2rem;  /* Adjust padding for mobile */
-        font-size: 1rem;         /* Reduce font size for mobile */
+        padding: .6rem 1.2rem; 
+        font-size: 1rem;     
     }
 
     .button__icon {
-        font-size: 1.1rem;       /* Reduce icon size for mobile */
+        font-size: 1.1rem;    
     }
 }
 
@@ -708,32 +707,31 @@ button, input {
 /* MOBILE STYLES */
 @media screen and (max-width: 768px) {
     .about__container {
-        grid-template-columns: 1fr; /* Stack content vertically */
-        text-align: center;
+        grid-template-columns: 1fr; 
     }
 
     .about__img {
-        width: 100%; /* Make the image responsive */
+        width: 100%;
         margin-bottom: 1.5rem;
     }
 
     .about__description {
-        padding-right: 0; /* Remove right padding for mobile */
+        padding-right: 0; 
         margin-bottom: var(--mb-1);
     }
 
     .about__info {
-        grid-template-columns: 1fr 1fr; /* Stack the info boxes */
+        grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
     }
 
     .about__box {
         padding: 0.75rem;
-        font-size: 0.9rem; /* Adjust font size for mobile */
+        font-size: 0.9rem; 
     }
 
     .about__icon {
-        font-size: 1.2rem; /* Reduce icon size for mobile */
+        font-size: 1.2rem; 
     }
 
     .about__title {
@@ -820,30 +818,27 @@ button, input {
 
 /* RESPONSIVE STYLES FOR MOBILE SCREENS */
 @media screen and (max-width: 768px) {
-    /* Change qualification container to a single column for mobile */
+  
     .qualification__container {
         grid-template-columns: 1fr; 
         row-gap: 2rem;
     }
 
-    /* Adjust qualification title size for mobile */
+  
     .qualification__title {
         font-size: var(--h4-font-size);
     }
 
-    /* Adjust timeline item padding for mobile */
     .timeline__item {
         padding-left: 2rem;
     }
 
-    /* Adjust circle dot size for mobile */
     .circle__dot {
         height: .8rem;
         width: .8rem;
         border-width: 1px;
     }
 
-    /* Reduce font size for timeline text and title on mobile */
     .timeline__title {
         font-size: var(--small-font-size);
     }
@@ -859,7 +854,7 @@ button, input {
 
 /* For extra small screens, such as phones in portrait mode */
 @media screen and (max-width: 480px) {
-    /* Further reduce padding and font sizes */
+ 
     .timeline__item {
         padding-left: 1.5rem;
     }
@@ -962,13 +957,12 @@ button, input {
 
 /* RESPONSIVE STYLES FOR MOBILE SCREENS */
 @media screen and (max-width: 768px) {
-    /* Change skills container layout to a single column for mobile */
+   
     .skills__container {
         grid-template-columns: 1fr;
         row-gap: 2rem;
     }
 
-    /* Adjust skills header layout */
     .skills__header {
         flex-direction: column;
         align-items: flex-start;
@@ -982,7 +976,7 @@ button, input {
         font-size: var(--small-font-size);
     }
 
-    /* Reduce font size for the skill items */
+ 
     .skills__name {
         font-size: var(--smaller-font-size);
     }
@@ -995,7 +989,6 @@ button, input {
         height: 4px;
     }
 
-    /* Adjust the size of the icons and arrows */
     .skills__icon, .skills__arrow {
         font-size: 1.5rem;
     }
@@ -1007,7 +1000,7 @@ button, input {
 
 /* For extra small screens, such as phones in portrait mode */
 @media screen and (max-width: 480px) {
-    /* Further reduce padding and font sizes */
+ 
     .skills__name {
         font-size: var(--smaller-font-size);
     }
@@ -1032,7 +1025,6 @@ button, input {
         font-size: var(--smaller-font-size);
     }
 
-    /* Reduce skill bar height for smaller screens */
     .skills__list {
         row-gap: 1rem;
     }
@@ -1114,26 +1106,26 @@ button, input {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Overlay */
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     z-index: 1000;
-    opacity: 0; /* Start hidden */
-    pointer-events: none; /* Prevent interaction when hidden */
-    transition: opacity 0.3s ease; /* Smooth opacity change */
+    opacity: 0; 
+    pointer-events: none;
+    transition: opacity 0.3s ease; 
 }
 
 .portfolio__popup.active {
-    opacity: 1; /* Fully visible */
-    pointer-events: all; /* Allow interaction */
+    opacity: 1; 
+    pointer-events: all; 
 }
 
 .portfolio__popup-inner {
-    background-color: #282828; /* Dark background for popup */
-    width: 90%; /* Adjust for responsiveness */
-    max-width: 900px; /* Maximum width */
+    background-color: #282828; 
+    width: 90%;
+    max-width: 900px;
     border-radius: 0.5rem;
     padding: 2rem;
     position: relative;
@@ -1141,7 +1133,7 @@ button, input {
 
 .portfolio__popup-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-columns: 1fr 1fr; 
     align-items: center;
     column-gap: 2rem;
 }
@@ -1204,14 +1196,14 @@ button, input {
 /* For screens smaller than 768px (tablets and below) */
 @media screen and (max-width: 768px) {
     .portfolio__popup-inner {
-        width: 95%; /* Adjust for responsiveness */
-        max-width: 600px; /* Maximum width for tablets */
-        padding: 1.5rem; /* Reduce padding on tablets */
+        width: 95%; 
+        max-width: 600px;
+        padding: 1.5rem; 
     }
 
     .portfolio__popup-content {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        row-gap: 1.5rem; /* Adjust spacing between columns */
+        grid-template-columns: 1fr; 
+        row-gap: 1.5rem; 
     }
 
     .portfolio__popup-subtitle {
@@ -1231,36 +1223,36 @@ button, input {
     }
 
     .portfolio__popup-close {
-        font-size: 1.2rem; /* Smaller close button */
+        font-size: 1.2rem; 
     }
 }
 
 /* For extra small screens (portrait mobile phones) */
 @media screen and (max-width: 480px) {
     .portfolio__popup-inner {
-        width: 90%; /* Even smaller width for mobile phones */
-        max-width: 500px; /* Maximum width for mobile phones */
-        padding: 1rem; /* Further reduce padding on mobile */
+        width: 90%; 
+        max-width: 500px; 
+        padding: 1rem;
     }
 
     .portfolio__popup-subtitle {
-        font-size: .85rem; /* Reduce subtitle size */
+        font-size: .85rem;
     }
 
     .work__title {
-        font-size: 1.1rem; /* Smaller title on phones */
+        font-size: 1.1rem; 
     }
 
     .work__button {
-        font-size: .9rem; /* Smaller button text */
+        font-size: .9rem; 
     }
 
     .pp__thumbnail img {
-        max-height: 250px; /* Smaller image on mobile */
+        max-height: 250px;
     }
 
     .portfolio__popup-close {
-        font-size: 1rem; /* Even smaller close button */
+        font-size: 1rem; 
     }
 }
 
@@ -1311,59 +1303,58 @@ button, input {
 
 /* RESPONSIVE STYLES */
 
-/* For screens smaller than 768px (tablets and below) */
 @media screen and (max-width: 768px) {
     .services__container {
-        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+        grid-template-columns: repeat(2, 1fr); 
         column-gap: 1.5rem;
     }
 
     .services__content {
-        padding: 4rem 0 1.5rem 1.5rem; /* Adjust padding for smaller screens */
+        padding: 4rem 0 1.5rem 1.5rem;
     }
 
     .services__icon {
-        font-size: 1.5rem; /* Slightly smaller icon size */
+        font-size: 1.5rem;
     }
 
     .services__title {
-        font-size: 1.4rem; /* Adjust title size for smaller screens */
+        font-size: 1.4rem; 
     }
 
     .services__button {
-        font-size: .9rem; /* Slightly smaller button text */
+        font-size: .9rem; 
     }
 
     .services__button-icon {
-        font-size: .9rem; /* Smaller button icon size */
+        font-size: .9rem; 
     }
 }
 
 /* For screens smaller than 480px (mobile phones) */
 @media screen and (max-width: 480px) {
     .services__container {
-        grid-template-columns: 1fr; /* Change to a single column on mobile */
+        grid-template-columns: 1fr; 
         column-gap: 1.2rem;
     }
 
     .services__content {
-        padding: 3rem 0 1rem 1rem; /* Reduce padding even further */
+        padding: 3rem 0 1rem 1rem; 
     }
 
     .services__icon {
-        font-size: 1.3rem; /* Smaller icon size for mobile */
+        font-size: 1.3rem;
     }
 
     .services__title {
-        font-size: 1.2rem; /* Smaller title on mobile */
+        font-size: 1.2rem; 
     }
 
     .services__button {
-        font-size: .85rem; /* Smaller button text on mobile */
+        font-size: .85rem; 
     }
 
     .services__button-icon {
-        font-size: .85rem; /* Smaller button icon size on mobile */
+        font-size: .85rem;
     }
 }
 
@@ -1371,55 +1362,55 @@ button, input {
 .contact__container {
     padding-left: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 1.5rem; /* Reduce the gap between columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem; 
     justify-content: center;
     align-items: flex-start;
 }
 
 .contact__info {
     display: grid;
-    gap: 0.75rem; /* Reduce gap between cards */
+    gap: 0.75rem; 
 }
 
 .contact__card {
     background-color: rgb(40, 40, 40); 
-    padding: 0.8rem; /* Reduce padding for a compact look */
-    border-radius: 0.4rem; /* Slightly smaller corner radius */
+    padding: 0.8rem; 
+    border-radius: 0.4rem; 
     text-align: center;
 }
 
 .contact__card-icon {
-    font-size: 1.5rem; /* Reduce icon size */
+    font-size: 1.5rem;
     color: var(--title-color);
-    margin-bottom: 0.5rem; /* Smaller margin below the icon */
+    margin-bottom: 0.5rem; 
 }
 
 .contact__card-title,
 .contact__card-data {
-    font-size: 0.9rem; /* Reduce font size */
+    font-size: 0.9rem;
 }
 
 .contact__card-title {
-    font-weight: 600; /* Keep it bold for emphasis */
+    font-weight: 600; 
 }
 
 .contact__card-data {
-    margin-bottom: 0.5rem; /* Reduce spacing below data */
+    margin-bottom: 0.5rem;
 }
 
 .contact__button {
-    font-size: 0.85rem; /* Smaller button text */
-    padding: 0.4rem 0.8rem; /* Compact button padding */
+    font-size: 0.85rem; 
+    padding: 0.4rem 0.8rem; 
 }
 
 .contact__button-icon {
-    font-size: 0.9rem; /* Smaller arrow icon */
+    font-size: 0.9rem; 
     transition: transform 0.3s;
 }
 
 .contact__button:hover .contact__button-icon {
-    transform: translateX(0.2rem); /* Subtle hover animation */
+    transform: translateX(0.2rem); 
 }
 
 /* RESPONSIVE STYLES */
@@ -1427,53 +1418,53 @@ button, input {
 /* For screens smaller than 768px (tablets and below) */
 @media screen and (max-width: 768px) {
     .contact__container {
-        padding-left: 1.5rem; /* Reduce left padding for tablets */
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        padding-left: 1.5rem; 
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact__card {
-        padding: 1rem; /* Increase padding slightly for readability */
+        padding: 1rem; 
     }
 
     .contact__card-title {
-        font-size: 1rem; /* Slightly larger font for titles */
+        font-size: 1rem;
     }
 
     .contact__card-data {
-        font-size: 0.95rem; /* Slightly larger font for data */
+        font-size: 0.95rem; 
     }
 
     .contact__button {
-        font-size: 1rem; /* Increase font size slightly */
+        font-size: 1rem;
     }
 }
 
 /* For screens smaller than 480px (mobile phones) */
 @media screen and (max-width: 480px) {
     .contact__container {
-        grid-template-columns: 1fr; /* 1 column layout for mobile */
-        padding-left: 1rem; /* Even less padding on mobile */
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
     }
 
     .contact__card {
-        padding: 0.8rem; /* Keep padding compact on mobile */
+        padding: 0.8rem;
     }
 
     .contact__card-title {
-        font-size: 0.95rem; /* Adjust title font size */
+        font-size: 0.95rem; 
     }
 
     .contact__card-data {
-        font-size: 0.85rem; /* Smaller font for mobile */
+        font-size: 0.85rem;
     }
 
     .contact__button {
-        font-size: 0.9rem; /* Smaller button text on mobile */
-        padding: 0.3rem 0.6rem; /* Reduced padding for mobile */
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
     }
 
     .contact__button-icon {
-        font-size: 0.8rem; /* Smaller icon on mobile */
+        font-size: 0.8rem; 
     }
 }
 
@@ -1575,45 +1566,44 @@ button, input {
 
 /* RESPONSIVE STYLES */
 
-/* For screens smaller than 768px (tablets and below) */
+
 @media screen and (max-width: 768px) {
     .input__container {
-        padding-left: 1.5rem; /* Reduce padding for smaller screens */
+        padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
     .input {
-        padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
-        font-size: 1rem; /* Adjust font size */
+        padding: 0.5rem 1rem;
     }
 
     .input__container label {
-        font-size: 1rem; /* Adjust label font size */
+        font-size: 1rem;
     }
 
     .input__container span {
-        font-size: 0.9rem; /* Adjust span font size */
+        font-size: 0.9rem;
     }
 }
 
 /* For screens smaller than 480px (mobile phones) */
 @media screen and (max-width: 480px) {
     .input__container {
-        padding-left: 1rem; /* Even more compact padding for mobile */
+        padding-left: 1rem; 
         padding-right: 1rem;
     }
 
     .input {
-        padding: 0.4rem 0.8rem; /* Smaller padding for mobile */
-        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem; 
     }
 
     .input__container label {
-        font-size: 0.9rem; /* Slightly smaller label font */
+        font-size: 0.9rem; 
     }
 
     .input__container span {
-        font-size: 0.8rem; /* Slightly smaller span font */
+        font-size: 0.8rem; 
     }
 }
 
@@ -1702,8 +1692,8 @@ button, input {
 /* Responsive Footer */
 @media screen and (max-width: 768px) {
     .footer {
-        padding-left: 1rem; /* Reduce padding on smaller screens */
-        padding-right: 1rem; /* Add padding on right side */
+        padding-left: 1rem; 
+        padding-right: 1rem; 
     }
 
     .footer__container {
@@ -1715,50 +1705,50 @@ button, input {
     .footer__links,
     .footer__socials {
         margin-bottom: var(--mb-1);
-        flex: 1 1 100%; /* Make each section take full width */
+        flex: 1 1 100%;
     }
 
     .footer__title {
-        font-size: 1.5rem; /* Adjust title font size for smaller screens */
+        font-size: 1.5rem; 
     }
 
     .footer__subtitle {
-        font-size: 1.2rem; /* Adjust subtitle font size for smaller screens */
+        font-size: 1.2rem; 
     }
 
     .footer__text {
-        font-size: 0.9rem; /* Adjust text font size for better readability */
+        font-size: 0.9rem; 
     }
 
     .footer__social {
-        font-size: 1.2rem; /* Adjust social icon size */
+        font-size: 1.2rem;
     }
 
     .footer__copy {
-        font-size: 0.85rem; /* Make copyright text smaller */
+        font-size: 0.85rem; 
     }
 }
 
 /* For even smaller screens (mobile phones) */
 @media screen and (max-width: 480px) {
     .footer__title {
-        font-size: 1.3rem; /* Further reduce title font size */
+        font-size: 1.3rem;
     }
 
     .footer__subtitle {
-        font-size: 1rem; /* Further reduce subtitle font size */
+        font-size: 1rem; 
     }
 
     .footer__text {
-        font-size: 0.85rem; /* Further adjust text font size */
+        font-size: 0.85rem; 
     }
 
     .footer__social {
-        font-size: 1.1rem; /* Further reduce social icon size */
+        font-size: 1.1rem;
     }
 
     .footer__copy {
-        font-size: 0.75rem; /* Further adjust copyright text font size */
+        font-size: 0.75rem;
     }
 }
 
