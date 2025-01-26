@@ -377,11 +377,7 @@ button, input {
 }
 
 /* Hide sidebar on mobile screens */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        display: none;  
-    }
-}
+
 
 /* MAIN */
 .main {
@@ -488,6 +484,14 @@ button, input {
 .home__description {
     max-width: 450px;
     margin-bottom: var(--mb-2);
+}
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;  
+    }
+    .main{
+        margin-left: 0;
+    }
 }
 
 /* Hide social links on small screens (phone) */
@@ -1776,4 +1780,3 @@ button, input {
         margin-right: var(--mb-1-5);
     }
 }
-
